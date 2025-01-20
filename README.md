@@ -5,19 +5,20 @@ This repository contains the code and analysis of the statistical properties of 
 This work is especially relevant for researchers, traders, and financial risk managers who aim to better understand the behavior of stock market indices and assess potential risks.
 
 
-## Key Components of the Analysis
-
-### Stylized Facts
+## Stylized Facts
 - **Log-Returns Distribution:** Returns are centered around zero but exhibit extreme values (heavy tails) compared to a normal distribution.
 - **Serial Correlation:** Low autocorrelation in returns but a positive correlation in squared returns, indicating volatility clustering.
 
-### Value at Risk (VaR)
+## Value at Risk (VaR)
 Different methods are used to compute VaR at 5% and 1% levels for daily and weekly data:
 
 - The **Normal Distribution method** often underestimates risk, especially at the 1% VaR level, because it fails to account for heavy tails.
 - The **Historical Simulation method** performs best at the 99% VaR level, but struggles during extreme market conditions due to its reliance on past data.
 - The **EWMA method** adapts to changing volatility, providing robust VaR estimates in periods of volatility clustering.
 - The **GARCH-GJR model** captures volatility clustering and asymmetries in market returns, offering better performance during periods of high volatility than other methods.
+
+
+## Methods
 
 ### Statistical Tests
 - **Unit Root Tests:** Using the Augmented Dickey-Fuller (ADF) test, the study shows that log-prices have a unit root (non-stationary), while log-returns do not (stationary).
