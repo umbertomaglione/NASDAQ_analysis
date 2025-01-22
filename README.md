@@ -17,6 +17,10 @@ Different methods are used to compute VaR at 5% and 1% levels for daily and week
 - The **EWMA method** adapts to changing volatility, providing robust VaR estimates in periods of volatility clustering.
 - The **GARCH-GJR model** captures volatility clustering and asymmetries in market returns, offering better performance during periods of high volatility than other methods.
 
+<p align="center">
+  <img src="var_violations_dotcom.png" width=55% title="VaR violations">
+</p>
+
 
 ## Methods
 
